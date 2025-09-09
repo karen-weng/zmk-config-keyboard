@@ -60,17 +60,6 @@
             >;
         };
 
-        
-    
-
-        lower_layer {
-        bindings = <
-            &kp none        &kp none        &bootloader
-            &kp none        &kp none        &bt BT_CLR
-            &kp BT_SEL 0        &kp BT_SEL 1        &bt BT_SEL 2
-        >;
-
-        };
     };
 
 };
