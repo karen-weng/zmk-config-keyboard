@@ -13,33 +13,27 @@
         label = "default_kscan";
         diode-direction = "col2row";
 
-        row-gpios =
-            <&pro_micro 0  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,   // P0.08 → Pro Micro 1
-            <&pro_micro 20 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,   // P1.07 → Pro Micro 20
-            <&pro_micro 19  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,   // P0.02 → Pro Micro 19
-            <&pro_micro 20 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,   // P0.29 → Pro Micro 20
-            <&pro_micro 21 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>;   // P0.31 → Pro Micro 21
+        row-gpios = <&gpio0 08 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            , <&gpio1 07 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            , <&gpio0 02 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            , <&gpio0 29 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            , <&gpio0 31 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>;
 
-
-        col-gpios =
-            <&pro_micro 1  GPIO_ACTIVE_HIGH>,   // P0.06 → Pro Micro 0
-            <&pro_micro 21 GPIO_ACTIVE_HIGH>,   // P1.02 → Pro Micro 21
-            <&pro_micro 18 GPIO_ACTIVE_HIGH>,   // P1.15 → Pro Micro 18
-            <&pro_micro 15 GPIO_ACTIVE_HIGH>,   // P1.13 → Pro Micro 15
-            <&pro_micro 14 GPIO_ACTIVE_HIGH>,   // P1.11 → Pro Micro 14
-            <&pro_micro 16 GPIO_ACTIVE_HIGH>,   // P0.10 → Pro Micro 16
-            <&pro_micro 10  GPIO_ACTIVE_HIGH>,   // P0.09 → Pro Micro 10
-            <&pro_micro 2  GPIO_ACTIVE_HIGH>,   // P0.17 → Pro Micro 2
-            <&pro_micro 3  GPIO_ACTIVE_HIGH>,   // P0.20 → Pro Micro 3
-            <&pro_micro 4  GPIO_ACTIVE_HIGH>,   // P0.22 → Pro Micro 4
-            <&pro_micro 5  GPIO_ACTIVE_HIGH>,   // P0.24 → Pro Micro 5
-            <&pro_micro 7  GPIO_ACTIVE_HIGH>,   // P0.11 → Pro Micro 7
-            <&pro_micro 8  GPIO_ACTIVE_HIGH>,   // P1.04 → Pro Micro 8
-            <&pro_micro 9 GPIO_ACTIVE_HIGH>,   // P1.06 → Pro Micro 9
-            <&pro_micro 13 GPIO_ACTIVE_HIGH>;   // P1.01 → Pro Micro 13
-
-            // 13, 21, 20 for extra 3 pins
-
+        col-gpios = <&gpio0 6 GPIO_ACTIVE_HIGH>
+            , <&gpio1 2 GPIO_ACTIVE_HIGH>
+            , <&gpio1 15 GPIO_ACTIVE_HIGH>
+            , <&gpio1 13 GPIO_ACTIVE_HIGH>
+            , <&gpio1 11 GPIO_ACTIVE_HIGH>
+            , <&gpio0 10 GPIO_ACTIVE_HIGH>
+            , <&gpio0 9 GPIO_ACTIVE_HIGH>
+            , <&gpio0 17 GPIO_ACTIVE_HIGH>
+            , <&gpio0 20 GPIO_ACTIVE_HIGH>
+            , <&gpio0 22 GPIO_ACTIVE_HIGH>
+            , <&gpio0 24 GPIO_ACTIVE_HIGH>
+            , <&gpio0 11 GPIO_ACTIVE_HIGH>
+            , <&gpio1 4 GPIO_ACTIVE_HIGH>
+            , <&gpio1 6 GPIO_ACTIVE_HIGH>
+            , <&gpio1 1 GPIO_ACTIVE_HIGH>;
 
     };
 
