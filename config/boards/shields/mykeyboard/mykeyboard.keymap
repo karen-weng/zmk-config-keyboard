@@ -57,7 +57,7 @@
                 &trans      &trans          &trans          &trans          &trans          &trans          &trans          &trans    &trans        &trans    &trans    &trans      &trans     &trans      &trans
                 &trans      &trans          &trans          &trans          &trans          &trans          &trans          &trans    &trans        &trans    &trans    &trans      &trans                 &trans
                 &trans      &trans          &trans          &trans          &trans          &trans          &trans          &trans    &trans        &trans    &trans    &trans      &trans                 &trans
-                &trans      &trans          &trans                                          &out OUT_TOG                              &bootloader   &trans    &trans    &bt BT_PRV  &trans                 &bt BT_NXT
+                &trans      &trans          &trans                                          &out OUT_TOG                              &bootloader   &sys_reset    &trans    &bt BT_PRV  &trans                 &bt BT_NXT
             >;
         };
 
