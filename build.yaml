@@ -21,3 +21,8 @@
 include:
   - board: nice_nano_v2
     shield: mykeyboard
+  - board: nice_nano_v2
+    shield: mykeyboard
+    cmake-args: -DZMK_CONFIG=${{ github.workspace }}/config
+    artifact-name: mykeyboard_settings_reset
+    extra-build-args: -- -DZMK_SETTINGS_RESET=y
